@@ -1,0 +1,13 @@
+{%  extends 'minerals/layout.html' %}
+
+{% block title %}Jenkins Minerals{% endblock %}
+{% block content %}
+    <div class="grid-100">
+          <ul class="minerals__container">
+                {% for mineral in minerals %}
+                    <li class="minerals__item">
+                    <a class="minerals__anchor" href="{% url 'minerals:detail' pk=mineral.pk %}">{{ mineral.name|upper|truncatechars:17 }}</a></li>
+              {%  endfor %}
+          </ul>
+    </div>
+{%  endblock %}
