@@ -12,10 +12,11 @@ def minerals_list(request):
 def mineral_detail(request, pk):
     try:
         mineral = models.Mineral.objects.filter(pk=pk).values('name', 'category', 'formula', 'strunz_classification',
-                                                       'crystal_system', 'unit_cell', 'color', 'crystal_symmetry',
-                                                       'cleavage', 'mohs_scale_hardness', 'luster', 'streak',
-                                                       'diaphaneity', 'optical_properties', 'refractive_index',
-                                                       'crystal_habit', 'specific_gravity', 'image_caption')
+                                                              'crystal_system', 'unit_cell', 'color',
+                                                              'crystal_symmetry', 'cleavage', 'mohs_scale_hardness',
+                                                              'luster', 'streak', 'diaphaneity', 'optical_properties',
+                                                              'refractive_index', 'crystal_habit', 'specific_gravity',
+                                                              'image_caption', 'group')
     except models.Mineral.DoesNotExist:
         raise Http404('You were looking for a rock, but you found a hard place.')
     try:
@@ -38,5 +39,5 @@ def sort_by_letter(request, letter=None):
 
 
 def sort_by_group(request, group=None):
-    minerals = models.Mineral.objects.all().filter(category__icontains=group)
+    minerals = models.Mineral.objects.all().filter(group__icontains=group)
     return render(request, 'minerals/index.html', {'minerals': minerals})

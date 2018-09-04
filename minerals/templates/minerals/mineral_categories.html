@@ -1,6 +1,6 @@
-<div class="sidenav grid-20">
+<div class="grid-20">
   <h4>Categories</h4>
-    {% for cat in categories %}
-        <a href="{% url 'minerals:group_sort' group=cat %}" class="btn">{{ cat }}</a>
+    {% for group in groups %}
+        <a href="{% url 'minerals:group_sort' group=group %}" class="btn">{{ group }}</a>
     {% endfor %}
 </div>

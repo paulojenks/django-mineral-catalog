@@ -3,11 +3,20 @@
 {% block title %}Jenkins Minerals{% endblock %}
 {% block content %}
     <div class="grid-80">
-          <ul class="minerals__container">
+        <div class="mineral__container">
+          <table style="width:99%"><tr>
                 {% for mineral in minerals %}
-                    <li class="minerals__item">
-                    <a class="minerals__anchor" href="{% url 'minerals:detail' pk=mineral.pk %}">{{ mineral.name|upper|truncatechars:17 }}</a></li>
+                    <td class="minerals__item">
+                    <a class="minerals__anchor" href="{% url 'minerals:detail' pk=mineral.pk %}">{{ mineral.name|upper|truncatechars:17 }}</a></td>
+                    {% if forloop.last %}
+                        </tr>
+                        {% else %}
+                        {% if forloop.counter|divisibleby:"3" %}
+                           </tr><tr>
+                            {% endif %}
+                    {% endif %}
               {%  endfor %}
-          </ul>
+          </table>
+        </div>
     </div>
 {%  endblock %}

@@ -21,7 +21,7 @@ def no_underscores(value):
 
 @register.inclusion_tag('minerals/mineral_categories.html')
 def mineral_categories():
-    categories = [
+    groups = [
         'Silicates',
         'Sulfates',
         'Sulfides',
@@ -35,4 +35,4 @@ def mineral_categories():
         'Native Elements',
         'Other'
     ]
-    return {'categories': categories}
+    return {'groups': groups}

@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19d6018-5456-4eb1-8cc8-569afe4b91d7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/django_mineral_catalog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django_mineral_catalog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minerals/migrations/0005_auto_20180829_1352.py" beforeDir="false" afterPath="$PROJECT_DIR$/minerals/migrations/0005_auto_20180829_1352.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_mineral_catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_mineral_catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minerals/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minerals/migrations/0002_auto_20180526_1616.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minerals/migrations/0003_auto_20180526_1701.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minerals/migrations/0004_auto_20180526_1706.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minerals/migrations/0005_auto_20180829_1352.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minerals/migrations/0006_merge_20180829_1354.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minerals/migrations/0007_mineral_group.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/minerals/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/minerals/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/minerals/static/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/minerals/static/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minerals/templates/minerals/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/minerals/templates/minerals/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/minerals/templates/minerals/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/minerals/templates/minerals/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minerals/templates/minerals/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/minerals/templates/minerals/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minerals/templates/minerals/letter_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/minerals/templates/minerals/letter_bar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minerals/templates/minerals/mineral_categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/minerals/templates/minerals/mineral_categories.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/minerals/templatetags/minerals_extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/minerals/templatetags/minerals_extras.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/minerals/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/minerals/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/minerals/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/minerals/views.py" afterDir="false" />
@@ -51,8 +53,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/minerals/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="327">
+              <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -60,11 +62,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mineral_categories.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/minerals/templates/minerals/mineral_categories.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/minerals/templates/minerals/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="43" selection-start-line="43" selection-end-line="43" selection-end-column="30" />
+            <state relative-caret-position="204">
+              <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/minerals/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_mineral_catalog/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/minerals/static/css/global.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-537">
+              <caret line="156" column="104" selection-start-line="156" selection-start-column="104" selection-end-line="156" selection-end-column="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/minerals/templates/minerals/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,18 +142,20 @@
         <option value="$PROJECT_DIR$/django_mineral_catalog/models.py" />
         <option value="$PROJECT_DIR$/django_mineral_catalog/views.py" />
         <option value="$PROJECT_DIR$/django_mineral_catalog/settings.py" />
-        <option value="$PROJECT_DIR$/django_mineral_catalog/urls.py" />
         <option value="$PROJECT_DIR$/minerals/templates/minerals/letter_bar.html" />
-        <option value="$PROJECT_DIR$/minerals/static/css/global.css" />
-        <option value="$PROJECT_DIR$/minerals/templates/minerals/index.html" />
         <option value="$PROJECT_DIR$/minerals/templates/minerals/detail.html" />
+        <option value="$PROJECT_DIR$/minerals/migrations/0005_auto_20180829_1352.py" />
+        <option value="$PROJECT_DIR$/minerals/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/minerals/migrations/0002_auto_20180903_1759.py" />
         <option value="$PROJECT_DIR$/minerals/templatetags/minerals_extras.py" />
         <option value="$PROJECT_DIR$/minerals/templates/minerals/mineral_categories.html" />
-        <option value="$PROJECT_DIR$/minerals/models.py" />
-        <option value="$PROJECT_DIR$/minerals/migrations/0005_auto_20180829_1352.py" />
-        <option value="$PROJECT_DIR$/minerals/urls.py" />
         <option value="$PROJECT_DIR$/minerals/views.py" />
+        <option value="$PROJECT_DIR$/minerals/models.py" />
         <option value="$PROJECT_DIR$/minerals/templates/minerals/layout.html" />
+        <option value="$PROJECT_DIR$/minerals/static/css/global.css" />
+        <option value="$PROJECT_DIR$/django_mineral_catalog/urls.py" />
+        <option value="$PROJECT_DIR$/minerals/urls.py" />
+        <option value="$PROJECT_DIR$/minerals/templates/minerals/index.html" />
       </list>
     </option>
   </component>
@@ -113,7 +168,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="800" />
     <option name="width" value="745" />
     <option name="height" value="915" />
@@ -130,30 +185,6 @@
               <item name="django-mineral-catalog" type="b2602c69:ProjectViewProjectNode" />
               <item name="django-mineral-catalog" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="django-mineral-catalog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-mineral-catalog" type="462c0819:PsiDirectoryNode" />
-              <item name="minerals" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django-mineral-catalog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-mineral-catalog" type="462c0819:PsiDirectoryNode" />
-              <item name="minerals" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django-mineral-catalog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-mineral-catalog" type="462c0819:PsiDirectoryNode" />
-              <item name="minerals" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django-mineral-catalog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django-mineral-catalog" type="462c0819:PsiDirectoryNode" />
-              <item name="minerals" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="minerals" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -164,7 +195,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../django-mineral-catalog-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -229,6 +260,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -237,7 +269,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31132075" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2751678" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -260,13 +292,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/minerals/templates/minerals/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/minerals/templates/minerals/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -403,11 +428,6 @@
     <entry file="file://$PROJECT_DIR$/../mineral_catalog/django_mineral_catalog/minerals/migrations/0004_auto_20180526_1706.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/minerals/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-359" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/../mineral_catalog/django_mineral_catalog/mineral_catalog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -444,13 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_mineral_catalog/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/minerals/templates/minerals/letter_bar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -458,68 +471,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_mineral_catalog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-          <folding>
-            <element signature="e#646#678#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/minerals/static/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="218" column="31" selection-start-line="218" selection-start-column="31" selection-end-line="218" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/minerals/templatetags/minerals_extras.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/minerals/templates/minerals/mineral_categories.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/minerals/migrations/0005_auto_20180829_1352.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/minerals/migrations/0006_merge_20180829_1354.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/minerals.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/minerals/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/minerals/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="75" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/minerals/migrations/0004_auto_20180526_1706.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -537,27 +490,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/minerals/templates/minerals/index.html">
+    <entry file="file://$PROJECT_DIR$/minerals/migrations/0005_auto_20180829_1352.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="361">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minerals/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minerals/migrations/0002_auto_20180903_1759.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minerals/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/minerals.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-282363" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minerals/templatetags/minerals_extras.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/minerals/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="327">
+          <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/minerals/templates/minerals/mineral_categories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_mineral_catalog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minerals/static/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-537">
+          <caret line="156" column="104" selection-start-line="156" selection-start-column="104" selection-end-line="156" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/minerals/templates/minerals/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="43" selection-start-line="43" selection-end-line="43" selection-end-column="30" />
+        <state relative-caret-position="204">
+          <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_mineral_catalog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="e#646#678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minerals/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minerals/templates/minerals/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
