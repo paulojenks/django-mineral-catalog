@@ -26,7 +26,8 @@ def make_mineral_dict(mineral):
         'optical properties': None,
         'refractive index': None,
         'crystal habit': None,
-        'specific gravity': None
+        'specific gravity': None,
+        'group': None
     }
     for key, value in mineral.items():
         fields[key] = value
@@ -60,7 +61,8 @@ def add_minerals_to_database(apps, schema_editor):
                         optical_properties=fields['optical properties'],
                         refractive_index=fields['refractive index'],
                         crystal_habit=fields['crystal habit'],
-                        specific_gravity=fields['specific gravity']
+                        specific_gravity=fields['specific gravity'],
+                        group=fields['group']
                     ).save()
 
             except IntegrityError:

@@ -1,14 +1,11 @@
 from django.shortcuts import render
 from django.http import Http404
-
+from django.db.models import Q
 from . import models
 
 
-def minerals_list(request, letter=None):
-    if letter:
-        minerals = models.Mineral.objects.filter(name__startswith=letter)
-    else:
-        minerals = models.Mineral.objects.filter(name__startswith="A")
+def minerals_list(request):
+    minerals = models.Mineral.objects.all()
     return render(request, 'minerals/index.html', {'minerals': minerals})
 
 
@@ -27,3 +24,19 @@ def mineral_detail(request, pk):
         raise Http404('You were looking for a rock, but you found a hard place.')
 
     return render(request, 'minerals/detail.html', {'mineral': mineral})
+
+
+def search(request):
+    term = request.GET.get('q')
+    minerals = models.Mineral.objects.filter(name__icontains=term)
+    return render(request, 'minerals/index.html', {'minerals': minerals})
+
+
+def sort_by_letter(request, letter=None):
+    minerals = models.Mineral.objects.all().filter(name__startswith=letter)
+    return render(request, 'minerals/index.html', {'minerals': minerals})
+
+
+def sort_by_group(request, group=None):
+    minerals = models.Mineral.objects.all().filter(category__icontains=group)
+    return render(request, 'minerals/index.html', {'minerals': minerals})
