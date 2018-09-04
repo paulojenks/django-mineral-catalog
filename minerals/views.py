@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from django.http import Http404
-from django.db.models import Q
 from . import models
 
 
-def minerals_list(request):
-    minerals = models.Mineral.objects.all()
+def minerals_list(request, letter=None):
+    if not letter:
+        minerals = models.Mineral.objects.all().filter(name__istartswith='A')
     return render(request, 'minerals/index.html', {'minerals': minerals})
 
 
@@ -29,15 +29,18 @@ def mineral_detail(request, pk):
 
 def search(request):
     term = request.GET.get('q')
-    minerals = models.Mineral.objects.filter(name__icontains=term)
+    minerals = models.Mineral.objects.all().prefetch_related('name')
+    minerals = minerals.filter(name__contains=term)
     return render(request, 'minerals/index.html', {'minerals': minerals})
 
 
 def sort_by_letter(request, letter=None):
-    minerals = models.Mineral.objects.all().filter(name__startswith=letter)
+    minerals = models.Mineral.objects.all()
+    minerals = minerals.filter(name__startswith=letter)
     return render(request, 'minerals/index.html', {'minerals': minerals})
 
 
 def sort_by_group(request, group=None):
-    minerals = models.Mineral.objects.all().filter(group__icontains=group)
+    minerals = models.Mineral.objects.all()
+    minerals = minerals.filter(group__icontains=group)
     return render(request, 'minerals/index.html', {'minerals': minerals})

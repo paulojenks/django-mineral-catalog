@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="{% static 'css/global.css' %}">
 </head>
 <body>
-
   <div class="bounds">
     <div class="grid-100">
       <a href="{% url 'minerals:index' %}">
@@ -26,25 +25,23 @@
       </a>
       <p class="logo__text text-centered">Minerals Rock!</p>
     </div>
-  <nav class="top-bar" role="navigation">
-      <section>
+      <section class="text-centered">
           <form action="{% url 'minerals:search' %}" method="GET">
                   <input type="search" name="q">
-                  <button type="button">SEARCH</button>
+                  <button type="submit">SEARCH</button>
           </form>
       </section>
-      <section>
-      <h3 class="text-centered">Filter by letter:
+      <section class="text-centered">
+      <h3>Filter by letter:
           {% for i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
-            <a href="{% url 'minerals:letter_sort' letter=i %}" class="btn">{{ i }}</a>
+            <a href="{% url 'minerals:letter_sort' letter=i %}" {% if i in request.path_info %}
+               {% if 'list' in request.path_info %}style="color:red;font-weight:bold"{% endif %}{% endif %}>{{ i }}</a>
           {% endfor %}
       </h3>
       </section>
-  </nav>
-      {% mineral_categories %}
+      {% mineral_categories request=request %}
       {%  block content %}{%  endblock %}
   </div>
-
   <div style="width:auto">
     <div class="minerals__random">
         {% random_mineral %}

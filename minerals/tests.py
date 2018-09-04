@@ -27,7 +27,8 @@ class MineralModelTests(TestCase):
             optical_properties='Test',
             refractive_index='Test',
             crystal_habit='Test',
-            specific_gravity='Test'
+            specific_gravity='Test',
+            group='Test'
         )
 
     def test_mineral_creation(self):
@@ -36,7 +37,6 @@ class MineralModelTests(TestCase):
 
 class MineralViewTests(TestCase):
     def setUp(self):
-
         self.mineral = Mineral.objects.create(
             pk=1,
             name='Test2',
@@ -57,7 +57,8 @@ class MineralViewTests(TestCase):
             optical_properties='Test',
             refractive_index='Test',
             crystal_habit='Test',
-            specific_gravity='Test'
+            specific_gravity='Test',
+            group='Test'
         )
 
     def test_mineral_view(self):
@@ -70,4 +71,8 @@ class MineralViewTests(TestCase):
         resp = self.client.get(reverse('minerals:detail', kwargs={'pk': self.mineral.pk}))
         self.assertEqual(resp.status_code, 200)
 
+    def test_letter_sort(self):
+        pass
 
+    def test_group_sort(self):
+        pass
