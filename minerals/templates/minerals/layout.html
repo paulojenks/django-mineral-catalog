@@ -1,6 +1,8 @@
-{% load static from staticfiles %}
-{% load minerals_extras %}
 <!DOCTYPE html>
+
+{% load static %}
+{% load minerals_extras %}
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -10,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'minerals/css/global.css' %}">
 </head>
 <body>
   <div class="bounds">
@@ -27,7 +29,7 @@
     </div>
       <section class="text-centered">
           <form action="{% url 'minerals:search' %}" method="GET">
-                  <input type="search" name="q">
+                  <input type="search" name="q" placeholder="Search...">
                   <button type="submit">SEARCH</button>
           </form>
       </section>

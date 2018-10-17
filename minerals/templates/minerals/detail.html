@@ -1,5 +1,5 @@
 {% extends 'minerals/layout.html' %}
-{% load static from staticfiles %}
+{% load static %}
 {% load minerals_extras %}
 
 {%  block title %}{{ mineral.name|upper }}{% endblock %}
@@ -8,7 +8,7 @@
       <h1 class="mineral__name">{{ mineral.name }}</h1>
       <div class="mineral__image-bg">
           {% with min=mineral.name %}
-            <img class="mineral__image" src="{% static 'images'%}/{{ min }}.jpg">
+            <img class="mineral__image" src="{% static 'minerals/images'%}/{{ min }}.jpg">
           {% endwith %}
         <p class="mineral__caption">{{ mineral.image_caption }}</p>
       </div>

@@ -29,7 +29,7 @@ def mineral_detail(request, pk):
 
 def search(request):
     term = request.GET.get('q')
-    minerals = models.Mineral.objects.all().prefetch_related('name')
+    minerals = models.Mineral.objects.all()
     minerals = minerals.filter(name__contains=term)
     return render(request, 'minerals/index.html', {'minerals': minerals})
 
