@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import Http404
 from . import models
 
@@ -36,7 +36,10 @@ def search(request):
 
 def sort_by_letter(request, letter=None):
     minerals = models.Mineral.objects.all()
-    minerals = minerals.filter(name__startswith=letter)
+    if letter is None:
+        minerals = minerals.filter(name__startswith='A')
+    else:
+        minerals = minerals.filter(name__startswith=letter)
     return render(request, 'minerals/index.html', {'minerals': minerals})
 
 
